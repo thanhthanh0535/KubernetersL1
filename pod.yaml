@@ -8,19 +8,18 @@
 #     address: 1119
 #       - old
 #       - new
-
--------------
+# -------------
 # this is a sample pod yaml
-APIVersion: v1
-Kind: Pod
-Metadata:
-  name: 
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod
   labels:
       env: demo
       type: frontend
 spec:
   containers:
   - name: nginx-container
-    image: nginx
+    image: nginx123
     ports:
       - containerPort: 80
