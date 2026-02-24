@@ -12,11 +12,13 @@
 # this is a sample pod yaml
 apiVersion: v1
 kind: Pod
+#dik datatype
 metadata:
   name: nginx-pod
   labels:
       env: demo
       type: frontend
+#a lists includes ports, sublists
 spec:
   containers:
   - name: nginx-container
